@@ -1,0 +1,281 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Comfortaa", cursive;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+button {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+ul[class] {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header__inner {
+    display: flex;
+    height: 73px;
+    z-index: 4;
+    position: relative;
+    align-items: center;
+}
+
+.search {
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    width: 700px;
+    height: 50px;
+    z-index: 4;
+    background-color: #FFE175;
+    border-radius: 60px;
+}
+
+.search-block {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    width: 670px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.search-block__icon {
+    z-index: 4;
+}
+
+.search-block__input {
+    width: 623px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 60px;
+}
+
+#search__input-text {
+    top: 0;
+    left: 15px;
+    width: 90%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    padding: 10px 10px;
+    border-radius: 60px;
+    font-family: "Comfortaa", cursive;
+}
+
+.menu {
+    position: absolute;
+    z-index: 4;
+    right: 0;
+}
+
+.menu__item {
+    padding-left: 30px;
+}
+
+.menu__item-burger {
+    padding-left: 30px;
+}
+
+.burger__menu {
+    width: 475px;
+    height: 830px;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    top: 73px;
+    right: 210px;
+    background-color: #fff;
+    transition: transform 0.7s;
+    z-index: 2;
+    transform: translateY(-200%);
+}
+
+.burger__menu-inner {
+    margin-top: 30px;
+    width: 475px;
+}
+
+.shop-text {
+    height: 60px;
+    width: 475px;
+    background-color: #fff;
+    position: relative;
+    text-align: left;
+    z-index: 2;
+}
+
+.shop-text__inner {
+    color: #000;
+    padding-left: 50px;
+    font-size: 30px;
+}
+
+.shop-text:hover {
+    background-color: rgba(255, 224, 117, 0.2);
+}
+
+.shop-text:hover::after {
+    content: url("../img/header-nav_arrow.png");
+    position: absolute;
+    display: block;
+    right: 50px;
+    width: 17px;
+    height: 19px;
+    top: 20px;
+}
+
+.burger__menu.active {
+    transform: translateY(0%);
+    z-index: 1;
+}
+
+.radial-gradient {
+    position: absolute;
+    right: 50%;
+    margin-right: -500px;
+    top: 100px;
+    width: 1000px;
+    height: 1000px;
+    background: radial-gradient(circle, rgba(255, 225, 117, 0.5) 10%, transparent 60%, transparent 30%);
+}
+
+.shop_logo-img {
+    width: 500px;
+    margin: 50px auto;
+    z-index: 2;
+}
+
+.shop__sliders {
+    position: relative;
+    height: 422px;
+    width: 1800px;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+}
+
+.shop__sliders-item {
+    margin-top: 33px;
+    height: 384px;
+}
+
+.shop__sliders-item img {
+    margin: auto;
+    height: 100%;
+    background-color: black;
+    filter: brightness(70%);
+}
+
+.shop__sliders .slick-arrow {
+    position: absolute;
+    margin: auto;
+    top: 490px;
+    font-size: 0;
+    width: 47px;
+    height: 47px;
+    background-color: none;
+}
+
+.shop__sliders .slick-arrow.slick-prev {
+    background: url("../img/arrow-left.png") 0 0 no-repeat;
+    left: 40%;
+}
+
+.shop__sliders .slick-arrow.slick-next {
+    background: url("../img/arrow-right.png") 0 0 no-repeat;
+    right: 40%;
+}
+
+.slick-center {
+    height: 450px;
+    margin: 0;
+    z-index: 5;
+}
+
+.slick-center img {
+    filter: brightness(100%);
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-list {
+    overflow: hidden;
+}
