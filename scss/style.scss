@@ -1,0 +1,113 @@
+@import '_global';
+@import '_reset';
+@import '_libs';
+
+
+/*MAIN*/
+
+
+.first-screen {
+  background-color: #000;
+  height: 927px;
+  width: 100%;
+  top: 0;
+}
+
+.text-block {
+  padding-top: 255px;
+  font-family: 'Rubik Mono One', sans-serif;
+  width: 810px;
+
+  &__title {
+    color: #FFE175;
+    font-size: 85px;
+  }
+
+  &__subtitle {
+    color: #fff;
+    font-size: 35px;
+    margin-top: 30px;
+  }
+}
+
+.main-phone {
+  position: absolute;
+  top: 0;
+  right: -250px;
+}
+
+.autorization__button {
+  color: #fff;
+  background-color: transparent;
+  width: 252px;
+  height: 65px;
+  border: 4px #FFE175 solid;
+  border-radius: 60px;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 95px;
+}
+
+.autorization__button:hover {
+  background-color: #FFE175;
+}
+
+.second-screen {
+  height: 750px;
+  background-color: #fff;
+  position: relative;
+
+  &__text {
+    font-size: 40px;
+    color: #FFE175;
+  }
+}
+
+.slider-block {
+  height: 507px;
+  width: 990px;
+  background: linear-gradient(330deg, rgba(185, 185, 185, 0.65), rgba(228, 228, 228, 0.25));
+  position: absolute;
+  right: 0;
+  top: 120px;
+  border-radius: 60px 0 0 60px;
+}
+
+.sliders {
+  width: 930px;
+  height: 340px;
+  top: 45px;
+  margin: auto;
+  position: relative;
+
+  &__item-img {
+    margin: 0 auto;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 370px;
+    font-size: 0;
+    width: 47px;
+    height: 47px;
+    background-color: none;
+
+    &.slick-prev {
+      left: 30px;
+      background: url('../img/arrow-left.png') 0 0 no-repeat;
+    }
+
+    &.slick-next {
+      margin-left: 107px;
+      background: url('../img/arrow-right.png') 0 0 no-repeat;
+    }
+  }
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}

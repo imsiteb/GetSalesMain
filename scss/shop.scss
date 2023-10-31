@@ -1,0 +1,78 @@
+@import '_global';
+@import '_reset';
+@import '_libs';
+
+
+.radial-gradient{
+  position: absolute;
+  right: 50%;
+  margin-right: -500px;
+  top: 100px;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(255, 225, 117, 0.5) 10%, transparent 60%, transparent 30%);
+}
+
+.shop_logo-img{
+  width: 500px;
+  margin: 50px auto;
+  z-index: 2;
+}
+
+.shop__sliders{
+  position: relative;
+  height: 422px;
+  width: 1800px;
+  margin: 0 auto;
+  transition: all 0.4s ease-in-out;
+
+  &-item{
+    margin-top: 33px;
+    height: 384px;
+  }
+
+  &-item img{
+    margin: auto;
+    height: 100%;
+    background-color: black;
+    filter: brightness(70%);
+  }
+
+  .slick-arrow {
+    position: absolute;
+    margin: auto;
+    top: 490px;
+    font-size: 0;
+    width: 47px;
+    height: 47px;
+    background-color: none;
+
+    &.slick-prev {
+      background: url('../img/arrow-left.png') 0 0 no-repeat;
+      left: 40%;
+    }
+
+    &.slick-next {
+      background: url('../img/arrow-right.png') 0 0 no-repeat;
+      right: 40%;
+    }
+  }
+}
+
+.slick-center{
+  height: 450px;
+  margin: 0;
+  z-index: 5;
+}
+
+.slick-center img{
+  filter: brightness(100%);
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
