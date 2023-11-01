@@ -13,7 +13,7 @@
   <!-- Add the slick-theme.css if you want default styling -->
   <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
   <link rel="stylesheet" href="css/shop.css">
-  <title>5 элемент</title>
+  <title>Избранное</title>
 </head>
 
 <body>
@@ -90,10 +90,13 @@
         </div>
       </div>
 
-      <div class="first-screen">
+      <div class="first-screen"> 
+        <br>
+      <?php include 'outputuser.php'; ?>
+
         <div class="radial-gradient"></div>
 
-        <img src="img/five-element-logo.png" alt="" class="shop_logo-img">
+        <img src="img/heart.png" alt="" class="shop_logo-img">
         
         <div class="shop__sliders">
           <div class="shop__sliders-item">
