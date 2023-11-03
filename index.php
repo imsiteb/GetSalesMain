@@ -30,31 +30,24 @@
                                 <form  id="log" action="alidation/entrance.php" class="group" method="post">
                                         <input type="text" class="form-control" name="login" id="login" placeholder="Введите логин"> <br>
                                         <input type="password" class="form-control" name="password" id="password" placeholder="Введите пароль"><br>
-                                        <button class="btn btn-success1" type="submit">войти</button>
+                                        <button class="btn btn-success1" type="submit" onclick="tomain()">войти</button>
                                  </form>
                     </div>  
             </div>
-            <?php else: ?>
-
-                <p> Привет, <?= $_COOKIE['user'] ?>. Нажмите <a href="/exit.php">здесь</a>, чтобы выйти.</p>
+           <?php else: ?>
+            <?php
+                header('Location: http://GetSalesMain/favorites.php');
+                exit; 
+                ?>
             <?php endif;?>
+
         </div>
             <script>
-            // var x=document.getElementsById("log")   
-            
             function reg() {
                 window.location.href='registration.php';
            }
-      
-            //     var y=document.getElementsById("reg")
-        //     var z=document.getElementsById("btn")  
-                
-        // function reg() {
-        //      x.style.left = "-1000px"
-        //      y.style.left = "50px"
-        //      z.style.left = "110px"
-        //    }
             </script>
+         
 
     </body>
     </html>

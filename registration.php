@@ -37,17 +37,13 @@
             <script>
             var x=document.getElementsById("log")   
             var y=document.getElementsById("reg")
-            // var z=document.getElementsById("btn")  
+            
                 
             function log() {
                 window.location.href='index.php';
            }
 
-        // function reg() {
-        //      x.style.left = "-1000px"
-        //      y.style.left = "50px"
-        //      z.style.left = "110px"
-        //    }
+       
             </script>
 
     </body>
