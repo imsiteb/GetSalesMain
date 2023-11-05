@@ -1,0 +1,1 @@
+<H1> Привет, <?= $_COOKIE['user'] ?>. Нажмите <a href="http://GetSalesMain/localhost/exit.php">здесь</a>, чтобы выйти.</H1>
