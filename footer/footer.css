@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.footer{
+background-color: black;
+height: 501px;
+}
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.contacts{
+  text-align: center;  
+  color: #FFE175;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 45px;
+  padding-top: 57px;
+  
+}
+.line
+{
+margin: auto;
+color: white;
+width: 596px;
+margin-top: 20px;
+}
+.iconsFooter{  
+    padding: auto;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.iconsFooter img { display:block;}
+.email{
+    display: block;
+    width: 70px;
+    height: 70px;
+}
+.geo{
+    display: block;
+    width: 70px;
+    height: 70px;    
+}
+.phone{
+    display: block;
+    width: 70px;
+    height: 70px;  
+}
+.textFooter{
+    display: flex;
+    position: relative;
+    margin-top: 46px;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    justify-content: space-around;
+    color: white;
+}
+.textGeolocation{
+    display: block;
+   padding-left: 20px;
+}
+.textEmail{
+    display: block;
+    padding-left: 40px;
+}
+.colortextNumberName{
+    color: #FFE175;
+}
+.textNumber{
+    display: block;
+}
+.text2Footer{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    margin-top: 9px;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+}
+.text2Geolocation{
+    display: block;
+    margin-left:210 px;
+}
+.text2Email{
+    display: block;  
+}
+.tex2tNumber{
+    display: block;
+}
