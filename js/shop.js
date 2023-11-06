@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
   $('.shop__sliders').slick({
     arrows: true,
@@ -26,4 +26,14 @@ $(document).ready(function(){
     //   }
     // ]
   });
+
+  $('#liked-img').on({
+    'click': function () {
+      var src = ($(this).attr('src') === 'img/liked_br.png')
+        ? 'img/to_like.png'
+        : 'img/liked_br.png';
+      $(this).attr('src',src);
+    }
+  });
+
 })
