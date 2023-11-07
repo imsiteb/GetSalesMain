@@ -92,9 +92,10 @@ a {
 .header__inner {
   display: flex;
   height: 73px;
-  z-index: 4;
+  z-index: 10;
   position: relative;
   align-items: center;
+  background-color: #fff;
 }
 
 .search {
@@ -150,6 +151,7 @@ a {
 }
 
 .burger__menu {
+  z-index: 1;
   width: 475px;
   height: 710px;
   border-radius: 0px 0px 20px 20px;
@@ -157,11 +159,11 @@ a {
   top: 73px;
   right: 210px;
   background-color: #fff;
-  transition: transform 0.7s;
-  z-index: 2;
   transform: translateY(-200%);
+  transition: transform 0.67s;
 }
 .burger__menu-inner {
+  z-index: 6;
   margin-top: 30px;
   width: 475px;
 }
@@ -196,7 +198,114 @@ a {
 
 .burger__menu.active {
   transform: translateY(0%);
-  z-index: 1;
+  z-index: 5;
+  box-shadow: 0 9px 8px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  background-color: black;
+  height: 501px;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.contacts {
+  text-align: center;
+  color: #FFE175;
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 45px;
+  padding-top: 57px;
+}
+
+.line {
+  margin: auto;
+  color: white;
+  width: 596px;
+  margin-top: 20px;
+}
+
+.iconsFooter {
+  padding: auto;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+.iconsFooter img {
+  display: block;
+}
+
+.email {
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+
+.geo {
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+
+.phone {
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+
+.textFooter {
+  display: flex;
+  position: relative;
+  margin-top: 46px;
+  font-size: 20px;
+  font-family: "Comfortaa", cursive;
+  justify-content: space-around;
+  color: white;
+}
+
+.textGeolocation {
+  display: block;
+  padding-left: 20px;
+}
+
+.textEmail {
+  display: block;
+  padding-left: 40px;
+}
+
+.colortextNumberName {
+  color: #FFE175;
+}
+
+.textNumber {
+  display: block;
+}
+
+.text2Footer {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  margin-top: 9px;
+  font-size: 20px;
+  font-family: "Comfortaa", cursive;
+  color: white;
+}
+
+.text2Geolocation {
+  display: block;
+  margin-left: 210 px;
+}
+
+.text2Email {
+  display: block;
+}
+
+.tex2tNumber {
+  display: block;
 }
 
 /*MAIN*/
@@ -273,6 +382,8 @@ a {
 }
 .sliders__item-img {
   margin: 0 auto;
+  width: 260px;
+  height: 340px;
 }
 .sliders .slick-arrow {
   position: absolute;
