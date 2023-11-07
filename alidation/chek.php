@@ -27,6 +27,7 @@ $mysql = new mysqli ('127.0.0.1:3306', 'root', '', 'test1');
 $mysql->query("INSERT INTO `users` (`login`, `pass`, `name`) VALUES('$login', '$pass', '$name')");
 $mysql->close();
 
+
 //переадресация на страницу с формой
 header('Location: ../index.php');
 ?>
