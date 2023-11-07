@@ -22,6 +22,10 @@ if (empty($user)){
 
 setcookie('user', $user['name'], time()+ 3600 * 24 * 30, "/");
 $mysql->close();
+
+if (!$result) {
+    die('Ошибка в SQL-запросе: ' . $mysql->error);
+}
 //переадресация на страницу с формой
 header('Location: ../index.php');
 ?>

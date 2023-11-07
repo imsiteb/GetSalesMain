@@ -15,7 +15,21 @@
   <link rel="stylesheet" href="css/shop.css">
   <title>Гиппо</title>
 </head>
+<script>
+  // Получаем элементы из DOM
+  const searchInput = document.getElementById('search__input-text');
 
+  // Добавляем обработчик события ввода
+  searchInput.addEventListener('keyup', function (event) {
+if (event.keyCode === 13) {
+const searchQuery = searchInput.value;
+if (searchQuery) {
+const shopPageName = searchQuery.toLowerCase().replace(/ /g, '-');
+document.location = shopPageName + '.html';
+}
+}
+});
+</script>
 <body>
 
   <header class="header">
@@ -36,7 +50,9 @@
           </div>
           <nav class="menu">
             <button class="menu__item">
-              <img src="img/liked.png" alt="">
+              <a href="http://GetSalesMain/favorites.php">
+                <img src="img/liked.png" alt="Любимое">
+              </a>
             </button>
             <button class="menu__item">
               <img src="img/log_in.png" alt="">
