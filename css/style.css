@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-  max-width: 1500px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -205,11 +205,6 @@ a {
 .footer {
   background-color: black;
   height: 501px;
-}
-
-.container {
-  max-width: 1500px;
-  margin: 0 auto;
 }
 
 .contacts {
