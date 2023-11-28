@@ -8,7 +8,7 @@ echo $pass;
  $pass = md5($pass."hujhgr678");
 
 // //подключение к бд
- $mysql = new mysqli ('127.0.0.1:3306', 'root', '', 'test1');
+ $mysql = new mysqli ('127.0.0.1:3306', 'imsiteb', 'imsiteb17', 'test1');
 
 // //получение данных из бд
 $result = $mysql->query("SELECT * FROM `users` WHERE `login` = '$login' AND `pass` = '$pass'");

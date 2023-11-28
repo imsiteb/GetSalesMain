@@ -9,46 +9,46 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Rubik+Mono+One&display=swap" rel="stylesheet">
   <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <!-- Add the slick-theme.css if you want default styling -->
   <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
-  <link rel="stylesheet" href="css/shop.css">
-  <title>Избранное</title>
+  <link rel="stylesheet" href="css/favorite.css">
+  <title>Мила</title>
 </head>
 
 <body>
 
   <header class="header">
-    <div class="container"> 
-        <div class="header__inner">
-          <a href="index.html" class="logo">
-            <img src="img/logo.png" alt="">
-          </a>
-          <div class="search">
-            <div class="search-block">
-              <div class="search-block__input">
-                <input type="text" placeholder="Search" id="search__input-text">
-              </div>
-              <button class="search-block__icon">
-                <img src="img/search.png" alt="">
-              </button>
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" alt="">
+        </a>
+        <div class="search">
+          <div class="search-block">
+            <div class="search-block__input">
+              <input type="text" placeholder="Search" id="search__input-text">
             </div>
+            <button class="search-block__icon">
+              <img src="img/search.png" alt="">
+            </button>
           </div>
-          <nav class="menu">
-            <button class="menu__item">
-            <a href="http://GetSalesMain/favorites.php">
+        </div>
+        <nav class="menu">
+          <button class="menu__item">
+            <a href="http://getsales/favorites.php">
               <img src="img/liked.png" alt="Любимое">
             </a>
-            </button>
-            <button class="menu__item">
-              <img src="img/log_in.png" alt="">
-            </button>
-            <button class="menu__item-burger">
-              <img src="img/menu.png" alt="">
-            </button>
-          </nav>
-        </div>
+          </button>
+          <button class="menu__item">
+            <img src="img/log_in.png" alt="">
+          </button>
+          <button class="menu__item-burger">
+            <img src="img/menu.png" alt="">
+          </button>
+        </nav>
       </div>
+    </div>
     </div>
   </header>
 
@@ -65,7 +65,7 @@
           <button onclick="document.location='gippo.html'" class="shop-text">
             <p class="shop-text__inner">Гиппо</p>
           </button>
-          <button onclick="document.location='groshik.html'"class="shop-text">
+          <button onclick="document.location='groshik.html'" class="shop-text">
             <p class="shop-text__inner">Грошик</p>
           </button>
           <button onclick="document.location='evroopt.html'" class="shop-text">
@@ -106,43 +106,51 @@
   }
 });
       </script>
-      <div class="first-screen"> 
-        <br>
-      <?php include 'outputuser.php'; ?>
+      <div class="first-screen">
+        <div class="container">
+          <?php include 'outputuser.php'; ?>
 
-        <div class="radial-gradient"></div>
-
-        <img src="img/heart.png" alt="" class="shop_logo-img">
-        
-        <div class="shop__sliders">
-          <div class="shop__sliders-item">
-            <img src="img/slider1.png" alt="">
+          <div class="favorite__items-block">
+            <div class="favorite__items-block__item1">
+            </div>
+            <div class="favorite__items-block__item2">
+            </div>
+            <div class="favorite__items-block__item3">
+            </div>
           </div>
-          <div class="shop__sliders-item">
-            <img src="img/slider2.png" alt="">
-          </div>
-          <div class="shop__sliders-item">
-            <img src="img/slider1.png" alt="">
-          </div>
-          <div class="shop__sliders-item">
-            <img src="img/slider2.png" alt="">
-          </div>
-          <div class="shop__sliders-item">
-            <img src="img/slider1.png" alt="">
-          </div>
-          <div class="shop__sliders-item">
-            <img src="img/slider2.png" alt="">
-          </div>
+        </div>
       </div>
-      
+
+
     </main>
     <footer class="footer">
-      
+      <div class="container">
+        <div class="contacts">
+          <h> contacts </h>
+          <hr class="line">
+          </hr>
+          <div class="iconsFooter">
+            <img src="img/geooo 1.png" alt="" class="geo">
+            <img src="img/сообщение.png" alt="" class="email">
+            <img src="img/trubka 1.png" alt="" class="phone">
+          </div>
+          <div class="textFooter">
+            <h class="textGeolocation">ул. Некрасова, 6</h>
+            <h class="textEmail">boreisha123@gmail.com</h>
+            <h class="textNumber"> +375 (29) 158-88-79 <span class="colortextNumberName">ЯНА</span></h>
+          </div>
+          <div class="text2Footer">
+            <h class="text2Geolocation">пр-т Независимости, 62</h>
+            <h class="text2Email">dianakononovic4@gmail.com</h>
+            <h class="text2Number">+375 (33) 917-50-13 <span class="colortextNumberName">ДИАНА</span></h>
+          </div>
+        </div>
     </footer>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script defer src="js/shop.js"></script>
   <script defer src="js/main.js"></script>
 
 </body>

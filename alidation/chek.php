@@ -21,10 +21,10 @@ if(mb_strlen($login)<5 || mb_strlen($login)> 90 ) {
 $pass = md5($pass."hujhgr678");
 
 //подключение к бд
-$mysql = new mysqli ('127.0.0.1:3306', 'root', '', 'test1');
+$mysql = new mysqli ('127.0.0.1:3306', 'imsiteb', 'imsiteb17', 'test1');
 
 //работа с таблицей бд
-$mysql->query("INSERT INTO `users` (`login`, `pass`, `name`) VALUES('$login', '$pass', '$name')");
+$mysql->query("INSERT INTO `users` (`login`, `pass`, `name` ) VALUES('$login', '$pass', '$name')");
 $mysql->close();
 
 

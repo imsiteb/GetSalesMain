@@ -1,0 +1,136 @@
+@import '_global';
+@import '_reset';
+@import '_libs';
+
+.favorite__items-block{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &__item1{
+    background: url('../img/almi/almi2.jpg') no-repeat center;
+    background-size: 100%;
+    position: relative;
+    border: 1px solid #cccccc;
+    width: 480px;
+    height: 635px;
+  }
+
+  &__item2{
+    background: url('../img/mila/mila5.jpg') no-repeat center;
+    background-size: 100%;
+    position: relative;
+    border: 1px solid #cccccc;
+    width: 480px;
+    height: 635px;
+  }
+
+  &__item3{
+    background: url('../img/santa/santa1.jpg') no-repeat center;
+    background-size: 100%;
+    position: relative;
+    border: 1px solid #cccccc;
+    width: 480px;
+    height: 635px;
+  }
+}
+
+.favorite__items-block__item1:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.7);
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.favorite__items-block__item1:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../img/liked_br.png") no-repeat center;
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.favorite__items-block__item1:hover:before,
+.favorite__items-block__item1:hover:after { 
+  opacity: 1;
+}
+.favorite__items-block__item1.deleted:hover:before,
+.favorite__items-block__item1.deleted:hover:after { 
+  opacity: 0;
+}
+
+
+.favorite__items-block__item2:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.7);
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.favorite__items-block__item2:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../img/liked_br.png") no-repeat center;
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.favorite__items-block__item2:hover:before,
+.favorite__items-block__item2:hover:after { 
+  opacity: 1;
+}
+.favorite__items-block__item2.deleted:hover:before,
+.favorite__items-block__item2.deleted:hover:after { 
+  opacity: 0;
+}
+
+
+.favorite__items-block__item3:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.7);
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.favorite__items-block__item3:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../img/liked_br.png") no-repeat center;
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.favorite__items-block__item3:hover:before,
+.favorite__items-block__item3:hover:after { 
+  opacity: 1;
+}
+.favorite__items-block__item3.deleted:hover:before,
+.favorite__items-block__item3.deleted:hover:after { 
+  opacity: 0;
+}

@@ -36,7 +36,7 @@
             </div>
            <?php else: ?>
             <?php
-                header('Location: http://GetSalesMain/favorites.php');
+                header('Location: http://getsales/index.html');
                 exit; 
                 ?>
             <?php endif;?>
